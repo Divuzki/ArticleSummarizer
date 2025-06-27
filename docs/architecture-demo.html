@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Architecture Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .diagram-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .description {
+            margin-top: 30px;
+            line-height: 1.6;
+            color: #374151;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Article Summarization System Architecture</h1>
+        
+        <div class="diagram-container">
+            <img src="system-architecture-diagram.svg" alt="System Architecture Diagram" style="max-width: 100%; height: auto;">
+        </div>
+        
+        <div class="description">
+            <h2>Architecture Overview</h2>
+            <p>This diagram illustrates the complete flow of the article summarization system, from user input through natural language processing to the final summary display. The system implements an extractive summarization approach using TF-IDF (Term Frequency-Inverse Document Frequency) scoring.</p>
+            
+            <h3>Key Components:</h3>
+            <ul>
+                <li><strong>User Input Layer:</strong> Captures article text and summary preferences</li>
+                <li><strong>Web Interface:</strong> React frontend with validation and user experience features</li>
+                <li><strong>Preprocessing:</strong> Text cleaning and normalization</li>
+                <li><strong>NLP Pipeline:</strong> Four parallel processing components for text analysis</li>
+                <li><strong>Scoring & Ranking:</strong> TF-IDF based sentence importance calculation</li>
+                <li><strong>Summary Generation:</strong> Combines selected sentences into coherent summary</li>
+                <li><strong>Summary Display:</strong> Enhanced UI with statistics and history tracking</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
